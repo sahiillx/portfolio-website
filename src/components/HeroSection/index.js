@@ -28,7 +28,6 @@ const HeroBG = styled.div`
   bottom: 0%;
   left: 16.5%;
 
-
   @media screen and (max-width: 960px) {
     left: 8%;
   }
