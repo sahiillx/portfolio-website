@@ -8,8 +8,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import About from "./components/2-Body/2-About";
 import Projects from "./components/2-Body/5-Projects";
 import Qualifications from "./components/2-Body/4-Qual";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import Contact from "./components/2-Body/6-Contact/Contact";
+import Footer from "./components/2-Body/7-Footer/Footer";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
