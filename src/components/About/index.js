@@ -8,6 +8,7 @@ const StyledSection = styled(motion.div)`
   display: flex;
   justify-content: center;
   padding: 80px 30px;
+  background-color: #ffffff;
 
   @media screen and (max-width: 960px) {
     padding: 66px 16px;
@@ -34,14 +35,14 @@ const Something = styled.div`
 const StyledSubText = styled.p`
   font-size: 32px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
+  color: #000000;
   line-height: 68px;
 `;
 
 const StyledHeadText = styled.h2`
   font-size: 50px;
   font-weight: 700;
-  color: ${({ theme }) => theme.text_primary};
+  color: #000000;
   line-height: 68px;
 `;
 

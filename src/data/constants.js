@@ -3,19 +3,19 @@ export const Bio = {
   name: "Sahil Khan",
   roles: [
     "Full Stack Developer",
-    "Android Developer",
-    "UI/UX Designer",
+    "MERN Developer",
+    "Blockchain Developer",
     "Programmer",
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-  github: "https://github.com/rishavchanda",
+  github: "https://github.com/sahiillx",
   resume:
-    "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
-  linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-  twitter: "https://twitter.com/RishavChanda",
-  insta: "https://www.instagram.com/rishav_chanda/",
-  facebook: "https://www.facebook.com/rishav.chanda.165/",
+    "",
+  linkedin: "https://www.linkedin.com/in/sahiillx/",
+  twitter: "https://twitter.com/ssahillx",
+  insta: "https://www.instagram.com/sahiillx/",
+  facebook: "",
 };
 
 export const skills = [
@@ -110,10 +110,10 @@ export const skills = [
     ],
   },
   {
-    title: "Android",
+    title: "Blockchain",
     skills: [
       {
-        name: "Java",
+        name: "Solidity",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
       },
@@ -153,7 +153,7 @@ export const skills = [
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
       },
       {
-        name: "Netlify",
+        name: "Vercel",
         image:
           "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
       },
@@ -166,11 +166,6 @@ export const skills = [
         name: "Postman",
         image:
           "https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667",
-      },
-      {
-        name: "Adobe XD",
-        image:
-          "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
       },
       {
         name: "Figma",
@@ -229,40 +224,6 @@ export const experiences = [
     date: "May 2023 - Present",
     desc: "Contributing to different open-source projects and learn from industry experts",
     doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
-  },
-  {
-    id: 3,
-    img: "https://media.licdn.com/dms/image/D4D0BAQGfGQHEJt8gPA/company-logo_100_100/0/1666002815185?e=1692230400&v=beta&t=c4obZda4Uh9q6vOcmCbxjoSiExvbvYwEHUlgdY0tU-4",
-    role: "Android Developer",
-    company: "DSC KIIT",
-    date: "Nov2021 - Present",
-    desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. ",
-    skills: [
-      "Leadership",
-      "Mobile Application Development",
-      "Kotlin",
-      "XML",
-      "Figma",
-    ],
-  },
-  {
-    id: 4,
-    img: "https://media.licdn.com/dms/image/C4D0BAQH4od9HG2K7bw/company-logo_100_100/0/1661484397513?e=1692230400&v=beta&t=IW-eebE0PpFxqZ8Q3UCYYtlAokbhAEqsNePBv2Pmg18",
-    role: "Android Developer Intern",
-    company: "Rudraksha Welffare Foundation",
-    date: "June 2021 - Oct 2021",
-    desc: "As an Android Developer Intern at Rudraksha Welfare Foundation from June 2021 to October 2021, I gained valuable hands-on experience in application development.",
-    skills: [
-      "Android",
-      "Java",
-      "Kotlin",
-      "XML",
-      "Node Js",
-      "Cloud Firestore",
-      "Firebase",
-      "Figma",
-    ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
   },
 ];
 

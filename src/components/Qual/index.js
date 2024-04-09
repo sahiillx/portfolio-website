@@ -7,13 +7,12 @@ import { education } from "../../data/constants";
 
 const Container = styled.div`
   display: flex;
-  background-color: ${({ theme }) => theme.card_light};
   flex-direction: column;
   justify-content: center;
   position: relative;
   align-items: center;
 
-  padding: 20px 0px 80px 0px;
+  padding: 50px 0px 80px 0px;
   @media (max-width: 960px) {
     padding: 0px;
   }
@@ -30,7 +29,6 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
-  padding-top: 40px;
   padding-bottom: 30px;
   gap: 12px;
   @media (max-width: 960px) {
@@ -43,7 +41,6 @@ const Title = styled.div`
   text-align: center;
   font-weight: 600;
   margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 32px;
@@ -53,7 +50,6 @@ const Desc = styled.div`
   font-size: 18px;
   text-align: center;
   max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 16px;
@@ -66,7 +62,7 @@ const QualTabs = styled.div`
   justify-content: center;
 `;
 const QualButton = styled.button`
-  color: ${({ active }) => (active ? "#854ce6" : "#fff")};
+  color: ${({ active }) => (active ? "#147efb" : "#000000")};
   font-size: 1.5rem;
   font-weight: 600;
   padding: 4rem 1.8rem 1.5rem 1rem;
@@ -78,7 +74,7 @@ const QualButton = styled.button`
   border: none;
   outline: none;
   :hover {
-    color: #854ce6;
+    color: #147efb;
   }
 `;
 
@@ -177,34 +173,37 @@ const Qualification = () => {
           <Timeline>
             {experiences.map((item, index) => (
               <React.Fragment key={index}>
-                {/* Render TimelineEmpty and TimelineMiddle before TimelineComponent for the first item */}
                 {index % 2 === 0 && (
                   <>
-                    <TimelineEmpty></TimelineEmpty>
+                    <TimelineComponent>
+                      <h2>{item.role}</h2>
+                      <p>{item.desc}</p>
+                    </TimelineComponent>
                     <TimelineMiddle>
                       <TimelineCircle></TimelineCircle>
                     </TimelineMiddle>
+                    <TimelineEmpty></TimelineEmpty>
                   </>
                 )}
 
-                <TimelineComponent>
-                  <h2>{item.role}</h2>
-                  <p>{item.desc}</p>
-                </TimelineComponent>
-
-                {/* Render TimelineEmpty and TimelineMiddle after TimelineComponent for the last item */}
                 {index % 2 !== 0 && (
                   <>
                     <TimelineEmpty></TimelineEmpty>
+
                     <TimelineMiddle>
                       <TimelineCircle></TimelineCircle>
                     </TimelineMiddle>
+                    <TimelineComponent>
+                      <h2>{item.role}</h2>
+                      <p>{item.desc}</p>
+                    </TimelineComponent>
                   </>
                 )}
               </React.Fragment>
             ))}
           </Timeline>
         )}
+
         {/* ------------------------Education Timeline-------------------------- */}
         {activeTab === false && (
           <Timeline>
@@ -217,21 +216,25 @@ const Qualification = () => {
                     <TimelineMiddle>
                       <TimelineCircle></TimelineCircle>
                     </TimelineMiddle>
+                    <TimelineComponent>
+                      <h2>{item.school}</h2>
+                      <p>{item.degree}</p>
+                    </TimelineComponent>
                   </>
                 )}
-
-                <TimelineComponent>
-                  <h2>{item.school}</h2>
-                  <p>{item.degree}</p>
-                </TimelineComponent>
 
                 {/* Render TimelineEmpty and TimelineMiddle after TimelineComponent for the last item */}
                 {index % 2 !== 0 && (
                   <>
-                    <TimelineEmpty></TimelineEmpty>
+                    <TimelineComponent>
+                      <h2>{item.school}</h2>
+                      <p>{item.degree}</p>
+                    </TimelineComponent>
+                    
                     <TimelineMiddle>
                       <TimelineCircle></TimelineCircle>
                     </TimelineMiddle>
+                    <TimelineEmpty></TimelineEmpty>
                   </>
                 )}
               </React.Fragment>

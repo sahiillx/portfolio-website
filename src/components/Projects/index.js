@@ -4,7 +4,7 @@ import ProjectCard from "../Cards/ProjectCard";
 import { projects } from "../../data/constants";
 
 const Container = styled.div`
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,9 +57,9 @@ const Desc = styled.div`
 
 const ToggleGroup = styled.div`
   display: flex;
-  border: 1.5px solid ${({ theme }) => theme.primary};
+  border: 2px solid black;
   font-size: 16px;
-  border-radius: 12px;
+  
   font-weight: 500;
   margin: 22px 0;
 
@@ -71,17 +71,17 @@ const ToggleGroup = styled.div`
 const ToggleButton = styled.div`
   padding: 8px 18px;
   cursor: pointer;
-  border-radius: 6px;
-  color: ${({ theme }) => theme.primary};
+  
+  color: black;
 
   ${({ active, theme }) =>
     active &&
     `
-      background-color: ${theme.primary + 20};
+      background-color: #147efb;
   `}
 
   &:hover {
-    background-color: ${({ theme }) => theme.primary + 8};
+    background-color: #147efb;
   }
 
   @media (max-width: 768px) {
@@ -92,7 +92,7 @@ const ToggleButton = styled.div`
 
 const Divider = styled.div`
   width: 1.5px;
-  background-color: ${({ theme }) => theme.primary};
+  background-color: black;
 `;
 
 const CardContainer = styled.div`

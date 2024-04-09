@@ -9,7 +9,10 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding-bottom: 5rem;
+  padding: 80px 30px 130px 30px;
+  background-color: #f9f9f9;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
 const Wrapper = styled.div`
@@ -26,8 +29,6 @@ const Title = styled.h1`
   font-size: 42px;
   text-align: center;
   font-weight: 600;
-
-  margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
 
   @media screen and (max-width: 960px) {

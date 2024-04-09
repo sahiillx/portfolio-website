@@ -5,7 +5,7 @@ import { useTheme } from "styled-components";
 import { FaBars } from "react-icons/fa";
 
 const Nav = styled.div`
-  background-color: ${({ theme }) => theme.card_light};
+  background-color: white;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -14,6 +14,7 @@ const Nav = styled.div`
   position: sticky;
   top: 0;
   z-index: 10;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: 1080px) {
     padding: 0px 30px;
@@ -55,7 +56,7 @@ const NavLogo = styled(LinkR)`
 `;
 
 const ColorText = styled.div`
-  color: ${({ theme }) => theme.primary};
+  color: #147efb;
   font-size: 32px;
 `;
 
@@ -87,14 +88,14 @@ const NavItems = styled.div`
 `;
 
 const NavLink = styled.a`
-  color: ${({ theme }) => theme.text_primary};
+  color: black;
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: #147efb;
     //transition: all 0.2s ease-in-out;
   }
 `;
@@ -114,21 +115,23 @@ const ButtonContainer = styled.div`
 
 const GithubButton = styled.button`
   background-color: transparent;
-  color: ${({ theme }) => theme.primary};
-  border: 1.8px solid ${({ theme }) => theme.primary};
-  border-radius: 20px;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   height: 70%;
   padding: 0 20px;
 
-  :hover {
-    background-color: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
+  &:hover {
+    background-color: #2e74ca;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    color: white;
   }
 `;
 
@@ -171,9 +174,11 @@ const Navbar = () => {
     <Nav>
       <NavContainer>
         <NavLogo to="/">
-          <ColorText>&lt;</ColorText>Sahil
-          <div style={{ color: theme.primary }}>/</div>Khan
-          <ColorText>&gt;</ColorText>
+          <div style={{display: "flex", color: "black"}}>
+            <ColorText>&lt;</ColorText>Sahil
+            <div style={{ color: "#147efb" }}>/</div>Khan
+            <ColorText>&gt;</ColorText>
+          </div>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => setIsOpen(!isOpen)} />

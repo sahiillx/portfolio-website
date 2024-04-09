@@ -13,20 +13,16 @@ const StyledTilt = styled(Tilt)`
 
 const StyledMotionDiv = styled(motion.div)`
   width: 100%;
-  background: linear-gradient(
-    90deg,
-    #00cea8 0%,
-    #bf61ff 100%
-  ); /* Green to pink gradient */
+
   padding: 1px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
 const StyledContentWrapper = styled.div`
-  background-color: #151030; /* Tertiary color */
+  background-color: #f9f9f9;
   border-radius: 20px;
-  padding: 20px 40px; /* Adjust padding as needed */
+  padding: 20px 40px;
   min-height: 280px;
   display: flex;
   flex-direction: column;
@@ -41,7 +37,7 @@ const StyledImage = styled.img`
 `;
 
 const StyledTitle = styled.h3`
-  color: #fff;
+  color: #000000;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
