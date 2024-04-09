@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import ProjectCard from "../Cards/ProjectCard";
-import { projects } from "../../data/constants";
+import ProjectCard from "../../Cards/ProjectCard";
+import { projects } from "../../../data/constants";
 
 const Container = styled.div`
   background-color: #f9f9f9;
@@ -12,10 +12,13 @@ const Container = styled.div`
   z-index: 1;
   align-items: center;
 
-  padding: 20px 0px 80px 0px;
-  @media (max-width: 960px) {
+  padding: 20px 0px 150px 0px;
+  @media (max-width: 768px) {
     padding: 0px;
+    padding-bottom: 150px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 98%, 0 100%);
   }
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97%, 0 100%);
 `;
 const Wrapper = styled.div`
   position: relative;
@@ -26,9 +29,10 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1200px;
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   gap: 12px;
-  @media (max-width: 960px) {
+  @media (max-width: 768px) {
+    padding: 30px;
     flex-direction: column;
   }
 `;
@@ -51,7 +55,7 @@ const Desc = styled.div`
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     margin-top: 12px;
-    font-size: 16px;
+    font-size: 20px;
   }
 `;
 
@@ -59,19 +63,20 @@ const ToggleGroup = styled.div`
   display: flex;
   border: 2px solid black;
   font-size: 16px;
-  
+
   font-weight: 500;
   margin: 22px 0;
 
   @media (max-width: 768px) {
-    font-size: 12px;
+    font-size: 18px;
+    margin-bottom: 30px;
   }
 `;
 
 const ToggleButton = styled.div`
   padding: 8px 18px;
   cursor: pointer;
-  
+
   color: black;
 
   ${({ active, theme }) =>
@@ -86,7 +91,7 @@ const ToggleButton = styled.div`
 
   @media (max-width: 768px) {
     padding: 6px 8px;
-    border-radius: 4px;
+    
   }
 `;
 

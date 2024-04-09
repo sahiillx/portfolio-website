@@ -2,7 +2,7 @@ import React from "react";
 import ServiceCard from "./ServiceCard";
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import { services } from "../../data/constants";
+import { services } from "../../../data/constants";
 
 const StyledSection = styled(motion.div)`
   display: flex;
@@ -14,8 +14,8 @@ const StyledSection = styled(motion.div)`
     padding: 66px 16px;
   }
 
-  @media screen and (max-width: 640px) {
-    padding: 32px 16px;
+  @media screen and (max-width: 768px) {
+    padding: 32px 22px;
   }
 `;
 
@@ -37,6 +37,11 @@ const StyledSubText = styled.p`
   font-weight: 600;
   color: #000000;
   line-height: 68px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    line-height: 48px;
+  }
 `;
 
 const StyledHeadText = styled.h2`
@@ -44,6 +49,12 @@ const StyledHeadText = styled.h2`
   font-weight: 700;
   color: #000000;
   line-height: 68px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 45px;
+    line-height: 38px;
+    margin-bottom: 30px;
+  }
 `;
 
 const StyledParagraph = styled(motion.p)`
@@ -60,6 +71,9 @@ const StyledServiceCardContainer = styled.div`
   justify-content: center;
   gap: 2rem;
   margin-top: 40px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const About = () => {

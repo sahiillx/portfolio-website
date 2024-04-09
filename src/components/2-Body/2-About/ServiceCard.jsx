@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 
 // Styled components for the ServiceCard component
 const StyledTilt = styled(Tilt)`
+  
   width: 100%;
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     width: 250px;
   }
 `;
@@ -14,13 +15,14 @@ const StyledTilt = styled(Tilt)`
 const StyledMotionDiv = styled(motion.div)`
   width: 100%;
 
-  padding: 1px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
 const StyledContentWrapper = styled.div`
   background-color: #f9f9f9;
+  border: 2px solid black;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 20px 40px;
   min-height: 280px;
@@ -28,6 +30,12 @@ const StyledContentWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    min-height: 300PX;
+    padding: 0px 20px;
+  
+  }
 `;
 
 const StyledImage = styled.img`

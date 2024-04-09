@@ -1,13 +1,15 @@
 import "./App.css";
 import styled from "styled-components";
 
-import Navbar from "./components/Navbar";
-import Hero from "./components/HeroSection";
-import Skills from "./components/Skills";
+import Navbar from "./components/1-Navbar";
+import Hero from "./components/2-Body/1-HeroSection";
+import Skills from "./components/2-Body/3-Skills";
 import { BrowserRouter as Router } from "react-router-dom";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Qualifications from "./components/Qual";
+import About from "./components/2-Body/2-About";
+import Projects from "./components/2-Body/5-Projects";
+import Qualifications from "./components/2-Body/4-Qual";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -17,17 +19,18 @@ const Body = styled.div`
 
 function App() {
   return (
-    
-      <Router>
-        <Navbar />
-        <Body>
-          <Hero />
-          <About />
-          <Skills />
-          <Qualifications />
-          <Projects />
-        </Body>
-      </Router>
+    <Router>
+      <Navbar />
+      <Body>
+        <Hero />
+        <About />
+        <Skills />
+        <Qualifications />
+        <Projects />
+        <Contact />
+        <Footer />
+      </Body>
+    </Router>
   );
 }
 

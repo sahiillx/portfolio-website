@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { skills } from "../../data/constants";
+import { skills } from "../../../data/constants";
 
 const Container = styled.div`
   display: flex;
@@ -13,6 +13,11 @@ const Container = styled.div`
   background-color: #f9f9f9;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+
+  @media screen and (max-width: 768px) {
+    padding-top: 50px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 97%, 0 100%);
+  }
 `;
 
 const Wrapper = styled.div`
@@ -44,7 +49,8 @@ const Desc = styled.p`
   color: ${({ theme }) => theme.text_secondary};
 
   @media screen and (max-width: 960px) {
-    font-size: 16px;
+    font-size: 20px;
+    
   }
 `;
 
@@ -63,8 +69,9 @@ const Skill = styled.div`
   max-width: 500px;
   height: 350px;
 
-  background-color: ${({ theme }) => theme.card};
-  border: 0.5px solid #854ce6;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   border-radius: 16px;
   padding: 18px 36px;
 

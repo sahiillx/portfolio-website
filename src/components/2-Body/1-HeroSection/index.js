@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { Bio } from "../../data/constants";
+import { Bio } from "../../../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../images/HeroImg.png";
-import HeroBgAnimation from "../../heroBgAnimation";
+import HeroImg from "../../../images/HeroImg.png";
+import HeroBgAnimation from "../../../heroBgAnimation";
 
 const HeroContainer = styled.div`
   background-color: #f9f9f9;
@@ -11,7 +11,7 @@ const HeroContainer = styled.div`
   justify-content: center;
   position: relative;
   padding: 80px 30px 100px 30px;
-  min-height: 70vh;
+  min-height: 75vh;
   z-index: 1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 
@@ -19,8 +19,8 @@ const HeroContainer = styled.div`
     padding: 66px 16px;
   }
 
-  @media screen and (max-width: 640px) {
-    padding: 32px 16px;
+  @media screen and (max-width: 768px) {
+    padding: 50px 16px 10px 16px;
   }
 `;
 
@@ -33,11 +33,10 @@ const HeroBG = styled.div`
     left: 8%;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     bottom: -1%;
     left: -28%;
   }
-  
 `;
 
 const HeroInnerContainer = styled.div`
@@ -61,13 +60,12 @@ const HeroLeftContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     justify-content: center;
   }
-
 `;
 
 const Title = styled.div`
@@ -80,7 +78,7 @@ const Title = styled.div`
     text-align: center;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 8px;
@@ -99,7 +97,7 @@ const TextLoop = styled.div`
     text-align: center;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     font-size: 22px;
     line-height: 48px;
     margin-bottom: 16px;
@@ -112,7 +110,6 @@ const Span = styled.span`
 `;
 
 const ResumeButton = styled.a`
-
   display: inline-flex;
   align-items: center;
   height: 50px;
@@ -128,6 +125,7 @@ const ResumeButton = styled.a`
   border-radius: 30px;
   font-size: 16px;
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  justify-content: center;
 
   &:hover {
     background-color: #2e74ca;
@@ -136,9 +134,10 @@ const ResumeButton = styled.a`
     color: white;
   }
 
-  @media screen and (max-width: 640px) {
-    padding: 12px 0px;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
     font-size: 18px;
+    margin: 30px;
   }
 `;
 
@@ -157,7 +156,7 @@ const HeroRightContainer = styled.div`
     margin-bottom: 80px;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     order: 1;
     margin-bottom: 30px;
   }
@@ -180,7 +179,7 @@ const Image = styled.img`
     max-height: 400px;
   }
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 768px) {
     max-width: 280px;
     max-height: 280px;
   }

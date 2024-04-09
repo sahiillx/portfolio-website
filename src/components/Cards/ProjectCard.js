@@ -7,16 +7,17 @@ const Card = styled.div`
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: all 0.5s ease-in-out;
   padding: 26px 20px;
   display: flex;
   flex-direction: column;
   gap: 14px;
+  border: 2px solid black;
 
   &:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
   }
