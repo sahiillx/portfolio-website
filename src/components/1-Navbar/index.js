@@ -62,13 +62,13 @@ const MobileIcon = styled.div`
   
   @media screen and (max-width: 768px) {
     display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
+    justify-content: center;
     transform: translate(-100%, 50%);
     font-size: 1.5rem;
     cursor: pointer;
     color: black;
+    height: 20px;
+    width: 20px;
   }
 `;
 const NavItems = styled.div`
