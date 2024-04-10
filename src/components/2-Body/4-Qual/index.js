@@ -161,6 +161,11 @@ const TimelineComponent = styled.div`
   }
 `;
 
+const Date = styled.p`
+  font-size: 1rem;
+  font-weight: 600;
+`;
+
 const Qualification = () => {
   const [activeTab, setActiveTab] = React.useState(true);
 
@@ -198,7 +203,8 @@ const Qualification = () => {
                   <>
                     <TimelineComponent>
                       <h2>{item.role}</h2>
-                      <p>{item.desc}</p>
+                      <Date>{item.date}</Date>
+                      <p>{item.company}</p>
                     </TimelineComponent>
                     <TimelineMiddle>
                       <TimelineCircle></TimelineCircle>
@@ -216,7 +222,8 @@ const Qualification = () => {
                     </TimelineMiddle>
                     <TimelineComponent>
                       <h2>{item.role}</h2>
-                      <p>{item.desc}</p>
+                      <Date>{item.date}</Date>
+                      <p>{item.company}</p>
                     </TimelineComponent>
                   </>
                 )}
@@ -239,8 +246,8 @@ const Qualification = () => {
                     </TimelineMiddle>
                     <TimelineComponent>
                       <h2>{item.school}</h2>
+                      <Date>{item.date}</Date>
                       <p>{item.degree}</p>
-                      <p>{item.desc}</p>
                     </TimelineComponent>
                   </>
                 )}
@@ -250,6 +257,7 @@ const Qualification = () => {
                   <>
                     <TimelineComponent>
                       <h2>{item.school}</h2>
+                      <Date>{item.date}</Date>
                       <p>{item.degree}</p>
                     </TimelineComponent>
 
