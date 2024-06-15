@@ -34,8 +34,12 @@ const StyledContentWrapper = styled.div`
   @media screen and (max-width: 768px) {
     min-height: 300PX;
     padding: 0px 20px;
-  
   }
+  @media screen and (max-width: 1080px) {
+    height: 80%;
+    width: 90%;
+    margin: 0 auto;
+    
 `;
 
 const StyledImage = styled.img`

@@ -10,7 +10,7 @@ const StyledSection = styled(motion.div)`
   padding: 80px 30px;
   background-color: #ffffff;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1080px) {
     padding: 66px 16px;
   }
 
@@ -42,6 +42,7 @@ const StyledSubText = styled.p`
     font-size: 24px;
     line-height: 48px;
   }
+    
 `;
 
 const StyledHeadText = styled.h2`
@@ -74,6 +75,10 @@ const StyledServiceCardContainer = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
+
+  @media screen and (max-width: 1080px) {
+  gap: 0.5rem;
+}
 `;
 
 const About = () => {
@@ -87,10 +92,10 @@ const About = () => {
           </Something>
 
           <StyledParagraph>
-            Innovative and enthusiastic computer science undergrad (Currently in
-            Third Year) with a passion for critical thinking/problem-solving and
-            sharing a love for technology and science. Let's collaborate and
-            create something remarkable together!
+            Innovative and enthusiastic computer science graduate with a passion
+            for critical thinking/problem-solving and sharing a love for
+            technology and science. Let's collaborate and create something
+            remarkable together!
           </StyledParagraph>
 
           <StyledServiceCardContainer>

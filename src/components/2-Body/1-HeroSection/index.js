@@ -15,8 +15,8 @@ const HeroContainer = styled.div`
   z-index: 1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 
-  @media screen and (max-width: 960px) {
-    padding: 66px 16px;
+  @media screen and (max-width: 1080px) {
+    padding: 66px 60px;
   }
 
   @media screen and (max-width: 768px) {

@@ -3,7 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import styled from "styled-components";
 import { useTheme } from "styled-components";
 import { FaBars } from "react-icons/fa";
-
+import About from "../2-Body/2-About";
 const Nav = styled.div`
   background-color: white;
   height: 80px;
@@ -17,7 +17,7 @@ const Nav = styled.div`
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 
   @media screen and (max-width: 1080px) {
-    padding: 0px 30px;
+    padding: 0px 60px;
   }
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -50,6 +50,9 @@ const NavLogo = styled(LinkR)`
     padding: 0px;
     font-size: 1.5rem;
   }
+  @media screen and (max-width: 1080px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const ColorText = styled.div`
@@ -59,7 +62,7 @@ const ColorText = styled.div`
 
 const MobileIcon = styled.div`
   display: none;
-  
+
   @media screen and (max-width: 768px) {
     display: flex;
     justify-content: center;
@@ -82,6 +85,7 @@ const NavItems = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
   }
+  
 `;
 
 const NavLink = styled.a`
@@ -94,6 +98,9 @@ const NavLink = styled.a`
   &:hover {
     color: #147efb;
     //transition: all 0.2s ease-in-out;
+  }
+    @media screen and (max-width: 1080px) {
+    font-size: 0.9rem;
   }
 `;
 
@@ -147,7 +154,6 @@ const MobileMenu = styled.div`
 
   border-radius: 0 0 20px 20px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  
 `;
 
 const MobileMenuIcon = styled.div`
@@ -163,13 +169,15 @@ const MobileMenuIcon = styled.div`
 `;
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false); 
+  const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme();
   return (
     <Nav>
       <NavContainer>
         <NavLogo to="/">
-          <div style={{ display: "flex", color: "black", "align-items": "center"}}>
+          <div
+            style={{ display: "flex", color: "black", "align-items": "center" }}
+          >
             <ColorText>&lt;</ColorText>Sahil
             <div style={{ color: "#147efb" }}>/</div>Khan
             <ColorText>&gt;</ColorText>
@@ -183,13 +191,18 @@ const Navbar = () => {
         </MobileIcon>
         <NavItems>
           <NavLink href="#about">About</NavLink>
-          <NavLink href="skills">Skills</NavLink>
-          <NavLink href="experience">Experience</NavLink>
-          <NavLink href="projects">Projects</NavLink>
-          <NavLink href="projects">Contact</NavLink>
+          <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#qualifications">Experience</NavLink>
+          <NavLink href="#project">Projects</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GithubButton>Github</GithubButton>
+          <GithubButton>
+            <NavLink href="https://github.com/sahiillx" target="_blank">
+              {" "}
+              Github{" "}
+            </NavLink>
+          </GithubButton>
         </ButtonContainer>
       </NavContainer>
       {isOpen && (

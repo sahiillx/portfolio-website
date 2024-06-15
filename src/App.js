@@ -20,14 +20,29 @@ const Body = styled.div`
 function App() {
   return (
     <Router>
+      <div id="about">
       <Navbar />
+      </div>
+      
       <Body>
-        <Hero />
+        
+          <Hero />
+        
         <About />
-        <Skills />
-        <Qualifications />
-        <Projects />
-        <Contact />
+        <div id="skills">
+          <Skills />
+        </div>
+
+        <div id="qualifications">
+          <Qualifications />
+        </div>
+
+        <div id="project">
+          <Projects />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
         <Footer />
       </Body>
     </Router>

@@ -8,7 +8,8 @@ export const Bio = {
     "Programmer",
   ],
   github: "https://github.com/sahiillx",
-  resume: "",
+  resume:
+    "https://drive.google.com/file/d/1Iob7tq7hWZHC8ksp1CEPD3qJzmJASaY1/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/sahiillx/",
 };
 
@@ -179,7 +180,7 @@ export const experiences = [
     img: "https://media.licdn.com/dms/image/D560BAQFDUKPSU8P0Lw/company-logo_200_200/0/1687947132305?e=1698278400&v=beta&t=cBF3SdszRLspmyvV-rHa1y4tdj_hjjivH7Xy0Z7kOD8",
     role: "Fullstack Developer Intern",
     company: "Polestar Engineering Consultancy",
-    date: "June 2023 - July 2023",
+    date: "August 2023 - Feburary 2024",
     desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
     skills: [
       "ReactJS",
@@ -234,21 +235,16 @@ export const projects = [
     title: "Gemini",
     date: "Jun 2023 - Jul 2023",
     description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
+      "Gemini-Clone is a replica of the Gemini website, built to demonstrate modern web development skills using JavaScript, React and Styled Components. ",
     image:
       "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
     tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
+      "React",
+      "Styled Components",
+      "Google API",
+      "Javascript"
+
+      
     ],
     category: "Web Apps",
     github: "https://github.com/rishavchanda/Trackify",
@@ -287,13 +283,39 @@ export const projects = [
   {
     id: 2,
     title: "Finance Data Extraction",
-    date: "Jun 2023 - Jul 2023",
+    date: "Sep 2023 - Sep 2023",
     description:
-      "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
+      "This web application streamlines the extraction of essential financial data from news articles. With a user-friendly interface built with Streamlit, the tool effortlessly extracts Company Name, Stock Symbol, Revenue, Net Income, and EPS.",
     image:
       "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-    tags: ["React Native", "JavaScript", "Axios"],
+    tags: ["Python", "OpenAI", "Stremlit"],
     category: "Others",
+    github: "https://github.com/rishavchanda/Job-finder-App",
+    webapp: "https://github.com/rishavchanda/Job-finder-App",
+  },
+  {
+    id: 3,
+    title: "Firebase Contact App",
+    date: "Jun 2024 - Jun 2024",
+    description:
+      "The app leverages Firebase for backend services, including authentication, real-time database, and cloud storage. It allows users to securely add, edit, delete, and view their contacts, ensuring data is synchronized across all devices in real-time.",
+    image:
+      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
+    tags: ["React", "JavaScript", "Fireabase", "Tailwind CSS"],
+    category: "Web Apps",
+    github: "https://github.com/rishavchanda/Job-finder-App",
+    webapp: "https://github.com/rishavchanda/Job-finder-App",
+  },
+  {
+    id: 4,
+    title: "Portfolio Website",
+    date: "Jan 2024 - Jun 2024",
+    description:
+      "This portfolio showcases my projects, skills, and contributions to the world of software development.",
+    image:
+      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
+    tags: ["React", "JavaScript", "Styled Component"],
+    category: "Web Apps",
     github: "https://github.com/rishavchanda/Job-finder-App",
     webapp: "https://github.com/rishavchanda/Job-finder-App",
   },

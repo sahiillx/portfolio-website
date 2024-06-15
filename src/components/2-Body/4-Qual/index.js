@@ -22,6 +22,9 @@ const Container = styled.div`
   z-index: 1;
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+
+  @media screen and (max-width: 1080px) {
+  }
 `;
 
 const Wrapper = styled.div`
@@ -48,6 +51,10 @@ const Title = styled.div`
     margin-top: 12px;
     font-size: 32px;
   }
+
+  @media screen and (max-width: 1080px) {
+    font-size: 35px;
+  }
 `;
 const Desc = styled.div`
   font-size: 18px;
@@ -56,6 +63,9 @@ const Desc = styled.div`
   @media screen and (max-width: 768px) {
     margin-top: 12px;
     font-size: 20px;
+  }
+  @media screen and (max-width: 1080px) {
+    font-size: 16px;
   }
 `;
 
@@ -88,6 +98,10 @@ const QualButton = styled.button`
     font-size: 1.2rem;
     padding: 20px;
   }
+
+  @media screen and (max-width: 1080px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const Timeline = styled.div`
@@ -105,8 +119,8 @@ const Timeline = styled.div`
     align-items: center;
     padding: 0px;
     margin: 0px;
-  
-
+  }
+  @media screen and (max-width: 1080px) {
   }
 `;
 const TimelineEmpty = styled.div``;
@@ -151,14 +165,13 @@ const TimelineComponent = styled.div`
   margin-bottom: 20px;
   border-radius: 6px;
 
-
   @media screen and (max-width: 768px) {
-    
     width: 100%;
     margin: 25px;
-  
-
   }
+  @media screen and (max-width: 1080px) {
+    font-size: 0.8rem;
+    height: 70%;
 `;
 
 const Date = styled.p`

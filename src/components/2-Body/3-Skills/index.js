@@ -67,7 +67,7 @@ const SkillsContainer = styled.div`
 const Skill = styled.div`
   width: 100%;
   max-width: 500px;
-  height: 350px;
+  height: 300px;
 
   background-color: white;
   border: 2px solid black;
