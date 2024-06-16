@@ -97,9 +97,9 @@ const Members = styled.div`
   padding-left: 10px;
 `;
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, setOpenModal}) => {
   return (
-    <Card>
+    <Card onClick={() => setOpenModal({ state: true, project: project })}>
       <Image src={project.image} />
       <Tags>
         {project.tags.map((tag, index) => (

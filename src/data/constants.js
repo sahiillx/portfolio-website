@@ -249,6 +249,7 @@ export const projects = [
     category: "Web Apps",
     github: "https://github.com/rishavchanda/Trackify",
     webapp: "https://trackify.duckdns.org",
+    
   },
 
   
@@ -311,7 +312,7 @@ export const projects = [
     title: "Portfolio Website",
     date: "Jan 2024 - Jun 2024",
     description:
-      "This portfolio showcases my projects, skills, and contributions to the world of software development.",
+      "This portfolio showcases my projects, skills, and contributions to the world of software development. It was built using React, styled-components, and deployed on Vercel.",
     image:
       "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
     tags: ["React", "JavaScript", "Styled Component"],

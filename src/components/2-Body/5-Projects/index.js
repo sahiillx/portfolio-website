@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ProjectCard from "../../Cards/ProjectCard";
 import { projects } from "../../../data/constants";
+import ProjectDetails from "../../Cards/ProjectDetail";
 
 const Container = styled.div`
   background-color: #f9f9f9;
@@ -91,7 +92,6 @@ const ToggleButton = styled.div`
 
   @media (max-width: 768px) {
     padding: 6px 8px;
-    
   }
 `;
 
@@ -107,7 +107,7 @@ const CardContainer = styled.div`
   gap: 20px;
   flex-wrap: wrap;
 `;
-const Projects = () => {
+const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = React.useState("All");
   return (
     <Container id="project">
@@ -181,14 +181,25 @@ const Projects = () => {
 
         <CardContainer>
           {toggle === "All" &&
-            projects.map((project) => <ProjectCard project={project} />)}
+            projects.map((project) => (
+              <ProjectCard
+                project={project}
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
+            ))}
           {projects
             .filter((item) => item.category === toggle)
             .map((project) => (
-              <ProjectCard project={project} />
+              <ProjectCard
+                project={project}
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
             ))}
         </CardContainer>
       </Wrapper>
+      <ProjectDetails />
     </Container>
   );
 };
