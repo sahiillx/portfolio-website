@@ -84,7 +84,8 @@ const StyledServiceCardContainer = styled.div`
 const About = () => {
   return (
     <>
-      <StyledSection>
+    
+      <StyledSection >
         <StyledInnerSection>
           <Something>
             <StyledSubText>Introduction</StyledSubText>

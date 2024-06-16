@@ -15,19 +15,19 @@ const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden ;
+
+  @media screen and (max-width: 960px) {
+    padding-top: 3rem;
+  }
 `;
 
 function App() {
   return (
     <Router>
-      <div id="about">
-      <Navbar />
-      </div>
-      
-      <Body>
-        
+      <Navbar /> 
+      <Body>   
           <Hero />
-        
         <About />
         <div id="skills">
           <Skills />

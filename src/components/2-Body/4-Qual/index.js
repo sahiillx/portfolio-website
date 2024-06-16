@@ -12,7 +12,7 @@ const Container = styled.div`
   position: relative;
   align-items: center;
 
-  padding: 50px 0px 80px 0px;
+  padding: 30px 0px 80px 0px;
 
   @media (max-width: 768px) {
     padding: 0px;
@@ -24,6 +24,7 @@ const Container = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 
   @media screen and (max-width: 1080px) {
+    padding-top: 20px;
   }
 `;
 
@@ -35,7 +36,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   gap: 12px;
   @media (max-width: 960px) {
     flex-direction: column;
@@ -82,7 +83,7 @@ const QualButton = styled.button`
   color: ${({ active }) => (active ? "#147efb" : "#000000")};
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 4rem 1.8rem 1.5rem 1rem;
+  padding: 30px 1.8rem 1.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;

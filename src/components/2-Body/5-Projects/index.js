@@ -12,7 +12,7 @@ const Container = styled.div`
   z-index: 1;
   align-items: center;
 
-  padding: 20px 0px 150px 0px;
+  padding: 30px 0px 150px 0px;
   @media (max-width: 768px) {
     padding: 0px;
     padding-bottom: 150px;
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
-  padding-top: 40px;
+
   padding-bottom: 50px;
   gap: 12px;
   @media (max-width: 768px) {

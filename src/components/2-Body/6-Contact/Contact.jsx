@@ -1,14 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-// import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from "react";
+import styled, { keyframes } from "styled-components";
+
+import emailjs from "@emailjs/browser";
+
 
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
   gap: 12px;
+  padding-top: 10px;
   z-index: 1;
   align-items: center;
+   padding: 0px 0px 0px 0px;
   
   
   @media (max-width: 960px) {
@@ -37,6 +41,7 @@ const Title = styled.div`
   font-size: 52px;
   text-align: center;
   font-weight: 600;
+  margin-top: 20px;
   color: #000000;
   @media (max-width: 768px) {
     margin-top: 12px;
@@ -113,6 +118,7 @@ const ContactButton = styled.input`
   text-decoration: none;
   text-align: center;
   background: hsla(271, 100%, 50%, 1);
+  cursor: pointer;
   background: linear-gradient(
     225deg,
     hsla(271, 100%, 50%, 1) 0%,
@@ -136,46 +142,91 @@ const ContactButton = styled.input`
   font-size: 18px;
   font-weight: 600;
 `;
+const pulseAnimation = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
+
+const SuccessMessage = styled.div`
+  text-align: center;
+  font-size: 20px;
+  margin-top: 16px;
+  color: green;
+  animation: ${pulseAnimation} 1s ease;
+`;
+
+const ErrorMessage = styled.div`
+  text-align: center;
+  font-size: 20px;
+  margin-top: 16px;
+  color: red;
+  animation: ${pulseAnimation} 1s ease;
+`;
 
 const Contact = () => {
-  //const form = useRef();
+  const form = useRef();
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
-    // emailjs
-    //   .sendForm(
-    //     "service_tox7kqs",
-    //     "template_nv7k7mj",
-    //     form.current,
-    //     "SybVGsYS52j2TfLbi"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       alert("Message Sent");
-    //       form.current.resut();
-    //     },
-    //     (error) => {
-    //       alert(error);
-    //     }
-    //   );
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE,
+        "template_2qskkjz",
+        form.current,
+        process.env.REACT_APP_USER
+      )
+      .then(
+        (result) => {
+          setShowSuccessMessage(true);
+          form.current.reset();
+          setTimeout(() => {
+            setShowSuccessMessage(false);
+          }, 3000); // Hide success message after 3 seconds
+        },
+        (error) => {
+          setShowErrorMessage(true);
+          setTimeout(() => {
+            setShowErrorMessage(false);
+          }, 3000); // Hide error message after 3 seconds
+        }
+      );
   };
 
   return (
     <Container>
       <Wrapper>
-        
         <Title>Contact</Title>
         <Desc>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm onSubmit={handleSubmit}>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" name="message" rows={4} />
+          <ContactInputMessage
+            placeholder="Message"
+            name="message"
+            rows={4}
+          />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
+        {showSuccessMessage && (
+          <SuccessMessage>Message Sent Successfully!</SuccessMessage>
+        )}
+        {showErrorMessage && (
+          <ErrorMessage>Failed to send message. Please try again later.</ErrorMessage>
+        )}
       </Wrapper>
     </Container>
   );

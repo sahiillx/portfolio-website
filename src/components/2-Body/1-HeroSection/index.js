@@ -4,6 +4,7 @@ import { Bio } from "../../../data/constants";
 import Typewriter from "typewriter-effect";
 import HeroImg from "../../../images/HeroImg.png";
 import HeroBgAnimation from "../../../heroBgAnimation";
+import NearMeRoundedIcon from "@mui/icons-material/NearMeRounded";
 
 const HeroContainer = styled.div`
   background-color: #f9f9f9;
@@ -122,7 +123,7 @@ const ResumeButton = styled.a`
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 20px;
   font-size: 16px;
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
   justify-content: center;
@@ -187,7 +188,7 @@ const Image = styled.img`
 
 const Hero = () => {
   return (
-    <div id="about">
+    <>
       <HeroContainer>
         <HeroInnerContainer>
           <HeroLeftContainer>
@@ -208,7 +209,7 @@ const Hero = () => {
               </Span>
             </TextLoop>
             <ResumeButton href={Bio.resume} target="_blank">
-              Check Resume
+              Say Hello <NearMeRoundedIcon style={{ color: "black", marginLeft: '8px' }} />
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
@@ -219,7 +220,8 @@ const Hero = () => {
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
-    </div>
+      <div id="abouts"></div>
+    </>
   );
 };
 

@@ -9,7 +9,7 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 80px 30px 130px 30px;
+  padding: 30px 30px 130px 30px;
   background-color: #f9f9f9;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
