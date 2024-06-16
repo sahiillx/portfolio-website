@@ -1,4 +1,4 @@
-import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
+import { CloseRounded } from "@mui/icons-material";
 import { Modal } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
@@ -71,17 +71,6 @@ const Image = styled.img`
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 `;
 
-const Label = styled.div`
-  font-size: 20px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
-  margin: 8px 6px;
-  @media only screen and (max-width: 600px) {
-    font-size: 16px;
-    margin: 8px 6px;
-  }
-`;
-
 const Tags = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -94,86 +83,37 @@ const Tags = styled.div`
 const Tag = styled.div`
   font-size: 14px;
   font-weight: 400;
-  color: ${({ theme }) => theme.primary};
+  color: black;
   margin: 4px;
   padding: 4px 8px;
   border-radius: 8px;
-  background-color: ${({ theme }) => theme.primary + 20};
+  background-color: #c6c6c6;
   @media only screen and (max-width: 600px) {
     font-size: 12px;
   }
 `;
 
-const Members = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin: 12px 6px;
-  @media only screen and (max-width: 600px) {
-    margin: 4px 6px;
-  }
-`;
-
-const Member = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 12px;
-`;
-
-const MemberImage = styled.img`
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 4px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-  @media only screen and (max-width: 600px) {
-    width: 32px;
-    height: 32px;
-  }
-`;
-
-const MemberName = styled.div`
-  font-size: 16px;
-  font-weight: 500;
-  width: 200px;
-  color: ${({ theme }) => theme.text_primary};
-  @media only screen and (max-width: 600px) {
-    font-size: 14px;
-  }
-`;
-
 const ButtonGroup = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: 12px 0px;
   gap: 12px;
 `;
 
 const Button = styled.a`
-  width: 100%;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
+  color: black;
   padding: 12px 16px;
   border-radius: 8px;
-  background-color: ${({ theme }) => theme.primary};
-  ${({ dull, theme }) =>
-    dull &&
-    `
-        background-color: ${theme.bgLight};
-        color: ${theme.text_secondary};
-        &:hover {
-            background-color: ${({ theme }) => theme.bg + 99};
-        }
-    `}
+  border: 2px solid #000000;
+  background-color: transparent;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.5s ease;
   &:hover {
-    background-color: ${({ theme }) => theme.primary + 99};
+    background-color: #2e74ca;
   }
   @media only screen and (max-width: 600px) {
     font-size: 12px;
@@ -192,9 +132,10 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           <CloseRounded
             style={{
               position: "absolute",
-              top: "10px",
+              top: "15px",
               right: "20px",
               cursor: "pointer",
+              color: "black",
             }}
             onClick={() => setOpenModal({ state: false, project: null })}
           />
