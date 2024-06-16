@@ -3,6 +3,8 @@ import ServiceCard from "./ServiceCard";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { services } from "../../../data/constants";
+import VerifiedIcon from "@mui/icons-material/Verified";
+import NextWeek from "@mui/icons-material/NextWeek";
 
 const StyledSection = styled(motion.div)`
   display: flex;
@@ -42,7 +44,6 @@ const StyledSubText = styled.p`
     font-size: 24px;
     line-height: 48px;
   }
-    
 `;
 
 const StyledHeadText = styled.h2`
@@ -77,15 +78,80 @@ const StyledServiceCardContainer = styled.div`
   }
 
   @media screen and (max-width: 1080px) {
-  gap: 0.5rem;
+    gap: 0.5rem;
+  }
+  @media (max-width: 960px) {
+    display: none;
+  }
+`;
+
+const Cards = styled.div`
+  display: flex;
+  gap: 3rem;
+  margin: 50px auto 40px auto;
+
+  @media (max-width: 768px) {
+  margin: 25px auto 20px auto;
+  gap: 1.5rem;
+
 }
+`;
+const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border: 1.5px solid black;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 15px 25px;
+`;
+const Title = styled.div`
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin: 8px 6px 0px 6px;
+`;
+const Desc = styled.div``;
+
+const ResumeButton = styled.a`
+  display: inline-flex;
+  align-items: center;
+  height: 50px;
+  width: 160px;
+  margin-top: 15px;
+
+  padding: 0 15px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  justify-content: center;
+
+  &:hover {
+    background-color: #2e74ca;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    color: white;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+    font-size: 18px;
+    margin: 30px;
+  }
 `;
 
 const About = () => {
   return (
     <>
-    
-      <StyledSection >
+      <StyledSection>
         <StyledInnerSection>
           <Something>
             <StyledSubText>Introduction</StyledSubText>
@@ -98,7 +164,24 @@ const About = () => {
             technology and science. Let's collaborate and create something
             remarkable together!
           </StyledParagraph>
-
+          
+          <Cards>
+            <Card>
+              <VerifiedIcon style={{ color: "black" }} />
+              <Title>Experience</Title>
+              <Desc>8+ Year</Desc>
+            </Card>
+            <Card>
+              <NextWeek style={{ color: "black" }} />
+              <Title>Completed</Title>
+              <Desc>20+ Project</Desc>
+            </Card>
+          </Cards>
+          <ResumeButton href="/" target="_blank">
+            Check Resume
+              {/* Say Hello <NearMeRoundedIcon style={{ color: "black", marginLeft: '8px' }} /> */}
+            </ResumeButton>
+          
           <StyledServiceCardContainer>
             {services.map((service, index) => (
               <ServiceCard key={service.title} index={index} {...service} />
