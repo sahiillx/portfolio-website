@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link as LinkR } from "react-router-dom";
 import styled, { useTheme } from "styled-components";
 import { FaBars } from "react-icons/fa";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Nav = styled.div`
   background-color: white;
@@ -20,6 +19,7 @@ const Nav = styled.div`
 
   @media screen and (max-width: 1080px) {
     padding: 0px 60px;
+    height: 70px;
   }
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;

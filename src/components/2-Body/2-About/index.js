@@ -88,13 +88,12 @@ const StyledServiceCardContainer = styled.div`
 const Cards = styled.div`
   display: flex;
   gap: 3rem;
-  margin: 50px auto 40px auto;
+  margin: 50px auto 20px auto;
 
   @media (max-width: 768px) {
-  margin: 25px auto 20px auto;
-  gap: 1.5rem;
-
-}
+    margin: 25px auto 20px auto;
+    gap: 1.5rem;
+  }
 `;
 const Card = styled.div`
   display: flex;
@@ -106,6 +105,11 @@ const Card = styled.div`
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 15px 25px;
+
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+    
+  }
 `;
 const Title = styled.div`
   font-size: 18px;
@@ -115,13 +119,13 @@ const Title = styled.div`
 `;
 const Desc = styled.div``;
 
-const ResumeButton = styled.a`
+const RButton = styled.a`
   display: inline-flex;
   align-items: center;
   height: 50px;
   width: 160px;
   margin-top: 15px;
-
+  margin-bottom: 50px;
   padding: 0 15px;
   border: 2px solid #000000;
   box-sizing: border-box;
@@ -164,12 +168,12 @@ const About = () => {
             technology and science. Let's collaborate and create something
             remarkable together!
           </StyledParagraph>
-          
+
           <Cards>
             <Card>
               <VerifiedIcon style={{ color: "black" }} />
               <Title>Experience</Title>
-              <Desc>8+ Year</Desc>
+              <Desc>1+ Year</Desc>
             </Card>
             <Card>
               <NextWeek style={{ color: "black" }} />
@@ -177,11 +181,11 @@ const About = () => {
               <Desc>20+ Project</Desc>
             </Card>
           </Cards>
-          <ResumeButton href="/" target="_blank">
+          <RButton href="/" target="_blank">
             Check Resume
-              {/* Say Hello <NearMeRoundedIcon style={{ color: "black", marginLeft: '8px' }} /> */}
-            </ResumeButton>
-          
+            {/* Say Hello <NearMeRoundedIcon style={{ color: "black", marginLeft: '8px' }} /> */}
+          </RButton>
+
           <StyledServiceCardContainer>
             {services.map((service, index) => (
               <ServiceCard key={service.title} index={index} {...service} />

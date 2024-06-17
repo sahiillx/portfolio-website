@@ -97,7 +97,7 @@ const QualButton = styled.button`
 
   @media screen and (max-width: 768px) {
     font-size: 1.2rem;
-    padding: 20px;
+    padding: 15px;
   }
 
   @media screen and (max-width: 1080px) {
@@ -167,12 +167,16 @@ const TimelineComponent = styled.div`
   border-radius: 6px;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 60%;
     margin: 25px;
   }
   @media screen and (max-width: 1080px) {
     font-size: 0.8rem;
     height: 70%;
+  }
+    @media (max-width: 560px) {
+    width: 70%;
+    }
 `;
 
 const Date = styled.p`
