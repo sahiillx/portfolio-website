@@ -240,8 +240,8 @@ export const projects = [
       "https://github.com/sahiillx/Urban-Bites/assets/69302208/81fcbe74-bedf-4884-9645-f0ef6c0f1950",
     tags: ["React", "Styled Components", "Google API", "Javascript"],
     category: "Web Apps",
-    github: "https://github.com/sahiillx/gemini-clone",
-    webapp: "https://gemini-alpha-six.vercel.app/",
+    github: "https://github.com/sahiillx/Urban-Bites",
+    webapp: "https://urban-bites-slpn.onrender.com",
   },
   {
     id: 1,
@@ -256,48 +256,8 @@ export const projects = [
     github: "https://github.com/sahiillx/gemini-clone",
     webapp: "https://gemini-alpha-six.vercel.app/",
   },
-
   {
     id: 2,
-    title: "Decentralized File Storage",
-    date: "Jan 2023 - Mar 2023",
-    description:
-      "Experience the future of file storage with our decentralized solution, built using Solidity, IPFS, MetaMask, and React. Our innovative platform leverages blockchain technology to securely store files across a distributed network, ensuring unparalleled reliability and data integrity. Seamlessly upload, manage, and access your files with enhanced privacy and efficiency",
-    image:
-      "https://github.com/sahiillx/Urban-Bites/assets/69302208/81fcbe74-bedf-4884-9645-f0ef6c0f1950",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-    category: "Blockchain",
-    github: "https://github.com/sahiillx/Decentralize-File-Storage",
-    webapp: "",
-  },
-  {
-    id: 3,
-    title: "Finance Data Extraction",
-    date: "Sep 2023 - Sep 2023",
-    description:
-      "This web application streamlines the extraction of essential financial data from news articles. With a user-friendly interface built with Streamlit, the tool effortlessly extracts Company Name, Stock Symbol, Revenue, Net Income, and EPS.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-    tags: ["Python", "OpenAI API", "Stremlit"],
-    category: "Others",
-    github: "https://github.com/sahiillx/OpenAi-Finance-Data-Extraction",
-    webapp: "https://github.com/rishavchanda/Job-finder-App",
-  },
-  {
-    id: 4,
-    title: "Firebase Contact App",
-    date: "Jun 2024 - Jun 2024",
-    description:
-      "The app leverages Firebase for backend services, including authentication, real-time database, and cloud storage. It allows users to securely add, edit, delete, and view their contacts, ensuring data is synchronized across all devices in real-time.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-    tags: ["React", "JavaScript", "Fireabase", "Tailwind CSS"],
-    category: "Web Apps",
-    github: "https://github.com/sahiillx/firebase-contact",
-    webapp: "https://github.com/rishavchanda/Job-finder-App",
-  },
-  {
-    id: 5,
     title: "Portfolio Website",
     date: "Jan 2024 - Jun 2024",
     description:
@@ -308,6 +268,45 @@ export const projects = [
     category: "Web Apps",
     github: "https://github.com/sahiillx/portfolio-website",
   },
+
+  {
+    id: 3,
+    title: "Decentralized File Storage",
+    date: "Jan 2023 - Mar 2023",
+    description:
+      "Experience the future of file storage with our decentralized solution, built using Solidity, IPFS, MetaMask, and React. Our innovative platform leverages blockchain technology to securely store files across a distributed network, ensuring unparalleled reliability and data integrity. Seamlessly upload, manage, and access your files with enhanced privacy and efficiency",
+    image:
+      "https://github.com/sahiillx/Decentralize-File-Storage/assets/69302208/caf72049-6ec5-4975-8d33-fa861b4a813f",
+    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+    category: "Blockchain",
+    github: "https://github.com/sahiillx/Decentralize-File-Storage",
+    webapp: "",
+  },
+  {
+    id: 4,
+    title: "Finance Data Extraction",
+    date: "Sep 2023 - Sep 2023",
+    description:
+      "This web application streamlines the extraction of essential financial data from news articles. With a user-friendly interface built with Streamlit, the tool effortlessly extracts Company Name, Stock Symbol, Revenue, Net Income, and EPS.",
+    image:
+      "https://media.licdn.com/dms/image/D4D22AQG0KCkYgKMZsA/feedshare-shrink_1280/0/1695918388225?e=1721865600&v=beta&t=tk7FTic-4kL0__AR75tCl-I-4ERPO157dJGUvKVoC1U",
+    tags: ["Python", "OpenAI API", "Stremlit"],
+    category: "Others",
+    github: "https://github.com/sahiillx/OpenAi-Finance-Data-Extraction",
+  },
+  {
+    id: 5,
+    title: "Firebase Contact App",
+    date: "Jun 2024 - Jun 2024",
+    description:
+      "The app leverages Firebase for backend services, including authentication, real-time database, and cloud storage. It allows users to securely add, edit, delete, and view their contacts, ensuring data is synchronized across all devices in real-time.",
+    image:
+      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
+    tags: ["React", "JavaScript", "Fireabase", "Tailwind CSS"],
+    category: "Web Apps",
+    github: "https://github.com/sahiillx/firebase-contact",
+  },
+
   {
     id: 6,
     title: "Ecommerce Shoping Website",
