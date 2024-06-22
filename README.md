@@ -5,9 +5,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Snapshot
 
-In the project directory, you can run:
+![3](https://github.com/sahiillx/portfolio-website/assets/69302208/44d51207-6a41-4520-8722-1ac30f288b1f)
+
+
 
 ### `npm start`
 
