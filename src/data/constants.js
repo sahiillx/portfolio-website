@@ -222,7 +222,7 @@ export const education = [
   },
   {
     id: 2,
-  
+
     school: "Kalka Public School",
     date: "Apr 2016 - Apr 2017",
     degree: "CBSE(X), Science with Computer",
@@ -232,70 +232,59 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Urban Bites",
+    date: "Jun 2023 - Jul 2023",
+    description:
+      "Developed a full-stack food delivery web application aimed at simplifying the ordering process from local restaurants. This comprehensive platform includes essential features such as an Admin Panel for restaurant management, seamless menu browsing, efficient order placement, and real-time order tracking to enhance user experience. MongoDB was utilized for its efficient and scalable database management capabilities, ensuring smooth operations even during peak times. To facilitate secure transactions, I integrated Stripe payment gateway, providing users with a seamless and trustworthy payment experience. Embrace convenience and reliability with our food delivery web app, designed to cater to your culinary cravings effortlessly",
+    image:
+      "https://github.com/sahiillx/Urban-Bites/assets/69302208/81fcbe74-bedf-4884-9645-f0ef6c0f1950",
+    tags: ["React", "Styled Components", "Google API", "Javascript"],
+    category: "Web Apps",
+    github: "https://github.com/sahiillx/gemini-clone",
+    webapp: "https://gemini-alpha-six.vercel.app/",
+  },
+  {
+    id: 1,
     title: "Gemini",
     date: "Jun 2023 - Jul 2023",
     description:
       "Gemini-Clone is a replica of the Gemini website, built to demonstrate modern web development skills using JavaScript, React and Styled Components. ",
     image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
-    tags: [
-      "React",
-      "Styled Components",
-      "Google API",
-      "Javascript"
-
-      
-    ],
+      "https://github.com/sahiillx/gemini-clone/assets/69302208/dccb1e21-f166-4e87-bd48-54e47ca1df27",
+    tags: ["React", "Styled Components", "Google API", "Javascript"],
     category: "Web Apps",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify.duckdns.org",
-    
+    github: "https://github.com/sahiillx/gemini-clone",
+    webapp: "https://gemini-alpha-six.vercel.app/",
   },
 
-  
-
   {
-    id: 1,
+    id: 2,
     title: "Decentralized File Storage",
     date: "Jan 2023 - Mar 2023",
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+      "Experience the future of file storage with our decentralized solution, built using Solidity, IPFS, MetaMask, and React. Our innovative platform leverages blockchain technology to securely store files across a distributed network, ensuring unparalleled reliability and data integrity. Seamlessly upload, manage, and access your files with enhanced privacy and efficiency",
     image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
+      "https://github.com/sahiillx/Urban-Bites/assets/69302208/81fcbe74-bedf-4884-9645-f0ef6c0f1950",
     tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
     category: "Blockchain",
-    github: "",
+    github: "https://github.com/sahiillx/Decentralize-File-Storage",
     webapp: "",
-    member: [
-      {
-        name: "Sahil Khan",
-        img: "",
-        linkedin: "",
-        github: "",
-      },
-      {
-        name: "Taksha Sharma",
-        img: "",
-        linkedin: "",
-        github: "",
-      },
-    ],
   },
   {
-    id: 2,
+    id: 3,
     title: "Finance Data Extraction",
     date: "Sep 2023 - Sep 2023",
     description:
       "This web application streamlines the extraction of essential financial data from news articles. With a user-friendly interface built with Streamlit, the tool effortlessly extracts Company Name, Stock Symbol, Revenue, Net Income, and EPS.",
     image:
       "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-    tags: ["Python", "OpenAI", "Stremlit"],
+    tags: ["Python", "OpenAI API", "Stremlit"],
     category: "Others",
-    github: "https://github.com/rishavchanda/Job-finder-App",
+    github: "https://github.com/sahiillx/OpenAi-Finance-Data-Extraction",
     webapp: "https://github.com/rishavchanda/Job-finder-App",
   },
   {
-    id: 3,
+    id: 4,
     title: "Firebase Contact App",
     date: "Jun 2024 - Jun 2024",
     description:
@@ -304,26 +293,35 @@ export const projects = [
       "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
     tags: ["React", "JavaScript", "Fireabase", "Tailwind CSS"],
     category: "Web Apps",
-    github: "https://github.com/rishavchanda/Job-finder-App",
+    github: "https://github.com/sahiillx/firebase-contact",
     webapp: "https://github.com/rishavchanda/Job-finder-App",
   },
   {
-    id: 4,
+    id: 5,
     title: "Portfolio Website",
     date: "Jan 2024 - Jun 2024",
     description:
       "This portfolio showcases my projects, skills, and contributions to the world of software development. It was built using React, styled-components, and deployed on Vercel.",
     image:
-      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
+      "https://github.com/sahiillx/portfolio-website/assets/69302208/44d51207-6a41-4520-8722-1ac30f288b1f",
     tags: ["React", "JavaScript", "Styled Component"],
     category: "Web Apps",
-    github: "https://github.com/rishavchanda/Job-finder-App",
-    webapp: "https://github.com/rishavchanda/Job-finder-App",
+    github: "https://github.com/sahiillx/portfolio-website",
   },
-  
+  {
+    id: 6,
+    title: "Ecommerce Shoping Website",
+    date: "Dec 2023 - Jan 2024",
+    description:
+      "Ecommerce website made using React, showcasing a diverse array of clothing styles. Explore high-quality garments designed to inspire, whether you're seeking casual comfort or sophisticated elegance. Start your fashion journey today and elevate your wardrobe effortlessly.",
+    image:
+      "https://github.com/sahiillx/e-commerce/assets/69302208/ba46fd54-6ecd-4df7-9829-6ba5ef20aa1a",
+    tags: ["React", "JavaScript", "Styled Component"],
+    category: "Web Apps",
+    github: "https://github.com/sahiillx/e-commerce",
+    webapp: "https://e-commerce-chi-coral.vercel.app",
+  },
 ];
-
-
 
 export const services = [
   {
