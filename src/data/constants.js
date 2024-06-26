@@ -9,7 +9,7 @@ export const Bio = {
   ],
   github: "https://github.com/sahiillx",
   resume:
-    "https://drive.google.com/file/d/1Iob7tq7hWZHC8ksp1CEPD3qJzmJASaY1/view?usp=sharing",
+    "https://drive.google.com/file/d/1_IAwlswTZV9pFojDDHJp-eFLJDETPAqX/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/sahiillx/",
 };
 
@@ -160,49 +160,29 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    role: "Frontend Engineer Intern",
-    company: "Neurobit",
-    date: "June 2023 - Present",
-    desc: "Working on the frontend of the web application using ReactJS, Redux, and Material UI.",
-    skills: [
-      "ReactJS",
-      "Redux",
-      "NodeJs",
-      "Material UI",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
-  },
-  {
-    id: 1,
     img: "https://media.licdn.com/dms/image/D560BAQFDUKPSU8P0Lw/company-logo_200_200/0/1687947132305?e=1698278400&v=beta&t=cBF3SdszRLspmyvV-rHa1y4tdj_hjjivH7Xy0Z7kOD8",
     role: "Fullstack Developer Intern",
     company: "Polestar Engineering Consultancy",
-    date: "August 2023 - Feburary 2024",
-    desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
+    date: "Nov 2023 - Feburary 2024",
+    desc: "Developed and designed the landing page, showcasing a blend of creativity and functionality to enhance the online presence.",
     skills: [
       "ReactJS",
-      "Redux",
       "NodeJs",
       "Material UI",
       "HTML",
       "CSS",
       "JavaScript",
-      "Docker",
-      "AWS",
       "MongoDB",
     ],
   },
 
   {
-    id: 2,
+    id: 1,
     img: "https://media.licdn.com/dms/image/C510BAQGSObrO0QPlMQ/company-logo_200_200/0/1555704980721?e=1692835200&v=beta&t=FjOWcUVVNzqFbTmmp0iXQkv5keBQC5lxIQ7K6rmMSMQ",
     role: "Freelance Web Developer",
     company: "Freelancer",
     date: "May 2023 - Present",
-    desc: "Contributing to different open-source projects and learn from industry experts",
+    desc: "Collaborated with a freelance company to provide freelance web development services. Developed Full Stack responsive and user-friendly websites using React and JavaScript.",
     doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
   },
 ];
@@ -232,6 +212,19 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Url Shortner",
+    date: "June 2024 - June 2024",
+    description:
+      "I developed Resume Shortner, a web application using React and Supabase to simplify URL management. The application generates QR codes and short URLs for long URLs, providing users with an easy way to share links. Additionally, it includes features for tracking URL visit statistics, offering insights into the number of visitors and overall engagement, all within a user-friendly interface.",
+    image:
+      "https://github.com/sahiillx/url-shortner/assets/69302208/2cc7986f-ce4d-482f-bfa4-5b7d14944d12",
+    tags: ["React", "Styled Components", "Google API", "Javascript"],
+    category: "Web Apps",
+    github: "https://github.com/sahiillx/url-shortner",
+    webapp: "https://clipurl.in/",
+  },
+  {
+    id: 1,
     title: "Urban Bites",
     date: "Jun 2023 - Jul 2023",
     description:
@@ -244,11 +237,11 @@ export const projects = [
     webapp: "https://urban-bites-slpn.onrender.com",
   },
   {
-    id: 1,
+    id: 2,
     title: "Gemini",
     date: "Jun 2023 - Jul 2023",
     description:
-      "Gemini-Clone is a replica of the Gemini website, built to demonstrate modern web development skills using JavaScript, React and Styled Components. ",
+      "Gemini Clone, an academic application that leverages the Gemini API to enable users to interact with a powerful AI model through a user-friendly interface. By employing Styled Components, a CSS-in-JS library, I built a clean and responsive UI, allowing for real-time communication with the AI model. ",
     image:
       "https://github.com/sahiillx/gemini-clone/assets/69302208/dccb1e21-f166-4e87-bd48-54e47ca1df27",
     tags: ["React", "Styled Components", "Google API", "Javascript"],
@@ -257,7 +250,7 @@ export const projects = [
     webapp: "https://gemini-alpha-six.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Portfolio Website",
     date: "Jan 2024 - Jun 2024",
     description:
@@ -270,7 +263,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Decentralized File Storage",
     date: "Jan 2023 - Mar 2023",
     description:
@@ -280,10 +273,9 @@ export const projects = [
     tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
     category: "Blockchain",
     github: "https://github.com/sahiillx/Decentralize-File-Storage",
-    webapp: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "Finance Data Extraction",
     date: "Sep 2023 - Sep 2023",
     description:
@@ -295,20 +287,33 @@ export const projects = [
     github: "https://github.com/sahiillx/OpenAi-Finance-Data-Extraction",
   },
   {
-    id: 5,
+    id: 6,
     title: "Firebase Contact App",
     date: "Jun 2024 - Jun 2024",
     description:
       "The app leverages Firebase for backend services, including authentication, real-time database, and cloud storage. It allows users to securely add, edit, delete, and view their contacts, ensuring data is synchronized across all devices in real-time.",
     image:
-      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
+      "https://github.com/sahiillx/firebase-contact/assets/69302208/98430d5a-5450-4bfd-8a77-6ed078392517",
     tags: ["React", "JavaScript", "Fireabase", "Tailwind CSS"],
     category: "Web Apps",
     github: "https://github.com/sahiillx/firebase-contact",
   },
+  {
+    id: 7,
+    title: "Simple Weather App",
+    date: "Jun 2024 - Jun 2024",
+    description:
+      "A straightforward weather application that fetches and displays current weather information for a specified location using a clean and user-friendly interface. Ideal for anyone looking to quickly check the weather conditions without any hassle.",
+    image:
+      "https://private-user-images.githubusercontent.com/69302208/337971028-a2d055ca-e842-4788-ada8-3df21931c831.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkzOTIxMjUsIm5iZiI6MTcxOTM5MTgyNSwicGF0aCI6Ii82OTMwMjIwOC8zMzc5NzEwMjgtYTJkMDU1Y2EtZTg0Mi00Nzg4LWFkYTgtM2RmMjE5MzFjODMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI2VDA4NTAyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdkYWY1NDgxM2RkMDlkMzdhZDFkZGZiNThiODRkMjRkNDJhZDJkY2E3MDc1ZmJlNjkxZGU1OGY2ZmQ4ZDgzZDEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.bwQfIoyV-81EjmRI17o7ijXr-_KUKHE3dvAmjoB_7js",
+    tags: ["React", "JavaScript", "Fireabase", "Tailwind CSS"],
+    category: "Web Apps",
+    github: "https://github.com/sahiillx/firebase-contact",
+    webapp: "https://simple-weather-app-ten-psi.vercel.app/",
+  },
 
   {
-    id: 6,
+    id: 8,
     title: "Ecommerce Shoping Website",
     date: "Dec 2023 - Jan 2024",
     description:
@@ -317,7 +322,7 @@ export const projects = [
       "https://github.com/sahiillx/e-commerce/assets/69302208/ba46fd54-6ecd-4df7-9829-6ba5ef20aa1a",
     tags: ["React", "JavaScript", "Styled Component"],
     category: "Web Apps",
-    github: "https://github.com/sahiillx/e-commerce",
+    github: "https://github.com/sahiillx/simple-weather-app",
     webapp: "https://e-commerce-chi-coral.vercel.app",
   },
 ];
