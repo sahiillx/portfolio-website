@@ -257,7 +257,7 @@ export const projects = [
       "This portfolio showcases my projects, skills, and contributions to the world of software development. It was built using React, styled-components, and deployed on Vercel.",
     image:
       "https://github.com/sahiillx/portfolio-website/assets/69302208/44d51207-6a41-4520-8722-1ac30f288b1f",
-    tags: ["React", "JavaScript", "Styled Component"],
+    tags: ["React", "JavaScript", "Styled Component", "Vercel"],
     category: "Web Apps",
     github: "https://github.com/sahiillx/portfolio-website",
   },
@@ -270,7 +270,7 @@ export const projects = [
       "Experience the future of file storage with our decentralized solution, built using Solidity, IPFS, MetaMask, and React. Our innovative platform leverages blockchain technology to securely store files across a distributed network, ensuring unparalleled reliability and data integrity. Seamlessly upload, manage, and access your files with enhanced privacy and efficiency",
     image:
       "https://github.com/sahiillx/Decentralize-File-Storage/assets/69302208/caf72049-6ec5-4975-8d33-fa861b4a813f",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
+    tags: ["Smart Contract", "Solidity", "React", "Metamask"],
     category: "Blockchain",
     github: "https://github.com/sahiillx/Decentralize-File-Storage",
   },
@@ -305,8 +305,8 @@ export const projects = [
     description:
       "A straightforward weather application that fetches and displays current weather information for a specified location using a clean and user-friendly interface. Ideal for anyone looking to quickly check the weather conditions without any hassle.",
     image:
-      "https://private-user-images.githubusercontent.com/69302208/337971028-a2d055ca-e842-4788-ada8-3df21931c831.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTkzOTIxMjUsIm5iZiI6MTcxOTM5MTgyNSwicGF0aCI6Ii82OTMwMjIwOC8zMzc5NzEwMjgtYTJkMDU1Y2EtZTg0Mi00Nzg4LWFkYTgtM2RmMjE5MzFjODMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjI2VDA4NTAyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdkYWY1NDgxM2RkMDlkMzdhZDFkZGZiNThiODRkMjRkNDJhZDJkY2E3MDc1ZmJlNjkxZGU1OGY2ZmQ4ZDgzZDEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.bwQfIoyV-81EjmRI17o7ijXr-_KUKHE3dvAmjoB_7js",
-    tags: ["React", "JavaScript", "Fireabase", "Tailwind CSS"],
+      "https://github.com/sahiillx/simple-weather-app/assets/69302208/a2d055ca-e842-4788-ada8-3df21931c831",
+    tags: ["React", "JavaScript", "Tailwind CSS"],
     category: "Web Apps",
     github: "https://github.com/sahiillx/firebase-contact",
     webapp: "https://simple-weather-app-ten-psi.vercel.app/",
