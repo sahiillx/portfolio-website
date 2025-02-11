@@ -3,9 +3,9 @@ export const Bio = {
   name: "Sahil Khan",
   roles: [
     "Full Stack Developer",
-    "MERN Developer",
-    "Blockchain Developer",
     "Programmer",
+    "Blockchain Developer",
+    "Data Analyst",
   ],
   github: "https://github.com/sahiillx",
   resume:
