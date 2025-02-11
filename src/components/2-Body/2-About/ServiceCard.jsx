@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 // Styled components for the ServiceCard component
 const StyledTilt = styled(Tilt)`
-  
   width: 100%;
   @media (min-width: 768px) {
     width: 250px;
@@ -32,14 +31,14 @@ const StyledContentWrapper = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    min-height: 300PX;
+    min-height: 300px;
     padding: 0px 20px;
   }
   @media screen and (max-width: 1080px) {
     height: 80%;
     width: 90%;
     margin: 0 auto;
-    
+  }
 `;
 
 const StyledImage = styled.img`
